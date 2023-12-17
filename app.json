@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "CARE",
+    "slug": "CARE",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E5634D"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "simulator":true,
+      "supportsTablet": true,
+      "bundleIdentifier": "com.huynh.CARE",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#E5634D"
+      },
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ],
+      "package": "com.huynh.CARE"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        "expo-device"
+      ],
+      "expo-background-fetch",
+      "expo-task-manager"
+    ],
+    "description": "",
+    "scheme": "mycoolredirect",
+    "extra": {
+      "eas": {
+        "projectId": "97c8824e-c221-4557-9d6d-676003edf952"
+      }
+    }
+  }
+}
